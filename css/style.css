@@ -101,7 +101,8 @@ img {
   border-right: 1px solid var(--border);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 24px;
   padding: 48px 40px 40px;
   overflow: hidden;
 }
@@ -141,6 +142,9 @@ img {
 
 /* Social links at the bottom of the left panel */
 .social-links {
+  position: absolute;
+  bottom: 40px;
+  left: 40px;
   display: flex;
   gap: 12px;
 }
@@ -564,7 +568,12 @@ img {
     height: auto;
     border-right: none;
     border-bottom: 1px solid var(--border);
-    padding: 32px 24px;
+    padding: 32px 24px 60px;
+  }
+
+  .social-links {
+    position: static;
+    margin-top: 24px;
   }
 
   .panel-right {
